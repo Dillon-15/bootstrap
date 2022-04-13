@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2d52e15448.js" crossorigin="anonymous"></script>
+
+    <style>
+      .social{
+        font-size: 30px;
+      }
+    </style>
     <title>Contact Page</title>
 </head>
 <body style="background-color:#c7b9aa;">
@@ -93,15 +101,28 @@
             </select>
             <label for="customRange2" class="form-label mt-2" style="color: #105c38; font-size: 25px;">How many rooms do you wish to rent:</label><output class="mx-4 p-2" style="color: #105c38; font-weight: bold;">1</output>
             <input type="range" class="form-range" style="color: #105c38;" value="1" min="1" max="12" id="customRange2" oninput="this.previousElementSibling.value = this.value">
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <input class="btn" type="submit" value="Submit" style="background-color:#105c38">
+            <div class="d-grid gap-2 col-6 mx-auto mt-2">
+              <button type="button" class="btn btn-outline-white" style="background-color:#105c38; color:white;">Submit</button>
             </div>
-            
           </form>
         </div>
       </div>
     </div>
 
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style="background-color: #105c38;">
+      <div class="col-md-6 d-flex align-items-center px-3">
+        <a href="index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <img src="WSI-logo.jpg" alt="logo" style="height: 35px; width: 35px;">
+        </a>
+        <span class="text-white">Walnut Street Inn</span>
+      </div>
+  
+      <ul class="nav col-md-6 justify-content-end list-unstyled d-flex px-3">
+        <li class="ms-3"><a class="text-white" href="facebook.com"><i class="fa-brands fa-facebook-square social"></i></li>
+        <li class="ms-3"><a class="text-white" href="instagram.com"><i class="fa-brands fa-instagram-square social"></i></li>
+        <li class="ms-3"><a class="text-white" href="twitter.com"><i class="fa-brands fa-twitter-square social"></i></li>
+      </ul>
+    </footer>
 
 
 
